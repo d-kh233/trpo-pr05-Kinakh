@@ -29,8 +29,8 @@ final class Product {
     public function price(): float{return $this->price;}
     public function categoryId(): int{return $this->categoryId;}
     public function active(): bool{return $this->active;}
-    public function belongsToCategory(int $categoryId): bool (return $this->categoryId === $categoryId;)
-    public function statusLabel(): string (return $this->active ? 'Активен' : 'Скрыт';) 
+    public function belongsToCategory(int $categoryId): bool {return $this->categoryId === $categoryId;}
+    public function statusLabel(): string {return $this->active ? 'Активен' : 'Скрыт';} 
 
 
   public function discountedPrice(float $percent): float
@@ -59,6 +59,5 @@ private function format(float $amount): string
 
     
 }
-
 
 
