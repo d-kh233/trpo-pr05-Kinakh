@@ -101,7 +101,7 @@ try {
                         <h2><?= e($product->name()) ?></h2>
                         <p class="price"><?= e($product->formattedPrice()) ?></p>
                         <p class="muted">Со скидкой 10%: <?= e($product->formattedDiscountedPrice(10)) ?></p>
-                        <p class="muted">Статус: <?= $product->isActive() ? 'Активен' : 'Скрыт' ?></p>
+                        <p class="muted">Статус: <?= $product->active() ? 'Активен' : 'Скрыт' ?></p>
                     </article>
                 <?php endforeach; ?>
             </div>
